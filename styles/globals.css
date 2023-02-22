@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Gloock', serif;
+    src: url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+}
+
+@font-face {
+    font-family: 'Great Vibes', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+}
+
