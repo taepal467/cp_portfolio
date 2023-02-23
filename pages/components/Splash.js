@@ -6,7 +6,6 @@ export default function Splash() {
       <Head>
         <title>Loading...</title>
       </Head>
-      <img src="/splash-logo.svg" className="h-20 animate-pulse" alt="Logo" />
     </div>
   )
 }
