@@ -2,12 +2,12 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill, BsLinkedin, BsGithub} from 'react-icons/bs' ;
 import {FaDev} from 'react-icons/fa';
 import Link from 'next/link';
+import Projects from "./components/Projects";
 
 //dark mode
 import {useState} from 'react';
 
 export default function Home() {
-
   const [darkMode, setDarkMode] = useState(false);
 
   return (
@@ -21,19 +21,19 @@ export default function Home() {
         <main className=' bg-white px-10 font-gloock dark:bg-slate-500'>
           <section className='min-h-screen'>
             <nav className=' py-10 mb-12 flex justify-between'>
-              <h1 className=' text-3xl font-greatVibes'>CP</h1>
+              <h1 className=' text-3xl'>CP</h1>
               <ul className='flex items-center'>
-                <li> 
+                <li className=' px-2 pr-10'> 
                   <BsFillMoonStarsFill 
                     className='cursor-pointer text-2xl'
                     onClick={() => setDarkMode(!darkMode)}
                   />
                 </li>
-                <li>
+                <li className=' px-2'>
                   <Link href="/">Home</Link>
                 </li>
-                <li>Projects</li>
-                <li>
+                <li className=' px-2'>Projects</li>
+                <li className=' px-2'>
                   <a href="https://docs.google.com/document/d/1gd_s5Lm468wk0DONMSpgxVsJarLlb9Cx51AHrZmtRnQ/edit?usp=sharing" 
                   target='_blank'
                   rel="noopener noreferrer"
@@ -58,6 +58,9 @@ export default function Home() {
               <a>
                 <FaDev />
               </a>
+            </div>
+            <div>
+              <Projects />
             </div>
           </section>
         </main>
