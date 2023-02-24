@@ -77,9 +77,7 @@ export default function Home() {
               <Projects />
             </div>
           </section>
-          <footer>
-            <p>Hello, i'm a footer</p>
-          </footer>
+
         </main>
       )}
    
