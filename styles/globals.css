@@ -23,21 +23,12 @@ body {
     src: url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
 }
 
-.animate-pulse {
-    animation: pulse 1.5s infinite;
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 0.2s;
   }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+}
+
 
 
 
