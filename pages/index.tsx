@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {BsFillMoonStarsFill, BsLinkedin, BsGithub} from 'react-icons/bs' ;
+import {BsFillMoonStarsFill, BsFillBrightnessHighFill, BsLinkedin, BsGithub} from 'react-icons/bs' ;
 import {FaDev} from 'react-icons/fa';
 import Link from 'next/link';
 import Projects from "./components/Projects";
@@ -35,10 +35,13 @@ export default function Home() {
               <h1 className=' text-3xl'>CP</h1>
               <ul className='flex items-center'>
                 <li className=' px-2 pr-10'> 
+                {darkMode ? <BsFillBrightnessHighFill 
+                  className='cursor-pointer text-2xl'
+                  onClick={() => setDarkMode(!darkMode)}/> : 
                   <BsFillMoonStarsFill 
-                    className='cursor-pointer text-2xl'
-                    onClick={() => setDarkMode(!darkMode)}
-                  />
+                  className='cursor-pointer text-2xl'
+                  onClick={() => setDarkMode(darkMode => !darkMode)}
+                />}
                 </li>
                 <li className=' px-2'>
                   <Link href="/">Home</Link>
@@ -74,8 +77,12 @@ export default function Home() {
               <Projects />
             </div>
           </section>
+          <footer>
+            <p>Hello, i'm a footer</p>
+          </footer>
         </main>
       )}
+   
     </div>
 
   );
