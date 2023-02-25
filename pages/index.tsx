@@ -31,7 +31,7 @@ export default function Home() {
       ) : (
         <main className='px-10 bg-white font-gloock dark:bg-black'>
           <section className='min-h-screen '>
-            <nav className='py-4 mb-12 flex justify-between border-2 border-b-black border-l-0 border-r-0'>
+            <nav className='py-4 mb-12 flex justify-between'>
               <Link href="/">
                   <h1 className='text-3xl font-bold p-1 border-4 border-violet-300 border-r-black border-4 border-violet-300 border-b-black hover:shadow-lg dark:hover:shadow-black/30'>CP</h1>
               </Link>
