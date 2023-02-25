@@ -29,12 +29,14 @@ export default function Home() {
         {loading ? (
         <Splash />
       ) : (
-        <main className=' bg-white px-10 font-gloock dark:bg-slate-500'>
-          <section className='min-h-screen'>
-            <nav className=' py-10 mb-12 flex justify-between'>
-              <h1 className=' text-3xl'>CP</h1>
-              <ul className='flex items-center'>
-                <li className=' px-2 pr-10'> 
+        <main className='px-10 bg-white font-gloock dark:bg-black'>
+          <section className='min-h-screen '>
+            <nav className='py-4 mb-12 flex justify-between border-2 border-b-black border-l-0 border-r-0'>
+              <Link href="/">
+                  <h1 className='text-3xl font-bold p-1 border-4 border-violet-300 border-r-black border-4 border-violet-300 border-b-black hover:shadow-lg dark:hover:shadow-black/30'>CP</h1>
+              </Link>
+              <ul className='flex items-center px-10'>
+                <li className=' px-2 pr-10 '> 
                 {darkMode ? <BsFillBrightnessHighFill 
                   className='cursor-pointer text-2xl'
                   onClick={() => setDarkMode(!darkMode)}/> : 
@@ -43,15 +45,16 @@ export default function Home() {
                   onClick={() => setDarkMode(darkMode => !darkMode)}
                 />}
                 </li>
-                <li className=' px-2'>
-                  <Link href="/">Home</Link>
+                <li className=' px-2 text-2xl font-bold hover:underline underline-offset-4 decoration-4 decoration-violet-300 hover:-translate-y-1 hover:scale-110 hover:duration-300'>
+                  <Link href="">About</Link>
                 </li>
-                <li className=' px-2'>Projects</li>
-                <li className=' px-2'>
+                <li className=' px-2 text-2xl font-bold transition ease-in-out delay-150 hover:underline underline-offset-4 decoration-4 decoration-violet-300 hover:-translate-y-1 hover:scale-110 hover:duration-300'>
+                  <Link href='./components/Projects'>Projects</Link>
+                  </li>
+                <li className=' px-2 text-2xl font-bold rounded-lg border-2 border-black bg-gradient-to-r from-violet-300 to-violet-400 hover:shadow-lg dark:hover:shadow-black/30'>
                   <a href="https://docs.google.com/document/d/1gd_s5Lm468wk0DONMSpgxVsJarLlb9Cx51AHrZmtRnQ/edit?usp=sharing" 
                   target='_blank'
-                  rel="noopener noreferrer"
-                  >
+                  rel="noopener noreferrer">
                     Resume
                   </a>
                 </li>
@@ -73,11 +76,7 @@ export default function Home() {
                 <FaDev />
               </a>
             </div>
-            <div>
-              <Projects />
-            </div>
           </section>
-
         </main>
       )}
    
