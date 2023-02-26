@@ -11,7 +11,7 @@ export default function Projects() {
             <main className='min-h-screen px-10 bg-slate-400 font-gloock dark:bg-black'>
                     <nav className='py-4 mb-12 flex justify-between'>
                         <Link href="/">
-                            <h1 className='text-3xl font-bold p-1 '>CP</h1>
+                            <h1 className=''>CP</h1>
                         </Link>
                         <ul className='flex items-center px-10'>
                             <li className=' px-2 pr-10 '> 
@@ -26,7 +26,7 @@ export default function Projects() {
                             <li className=' px-2'>
                                 <Link href='./components/Projects'>Projects</Link>
                             </li>
-                            <li className=' px-2 text-2xl font-bold rounded-lg shadow-lg shadow-indigo-500/40 border-2 border-black bg-gradient-to-r from-violet-300 to-violet-400 hover:shadow-lg dark:hover:shadow-black/30'>
+                            <li className=' px-2'>
                             <a href="https://docs.google.com/document/d/1gd_s5Lm468wk0DONMSpgxVsJarLlb9Cx51AHrZmtRnQ/edit?usp=sharing" 
                                 target='_blank'
                                 rel="noopener noreferrer">
