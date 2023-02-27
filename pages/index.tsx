@@ -4,6 +4,10 @@ import {FaDev} from 'react-icons/fa';
 import Link from 'next/link';
 import { useState , useEffect} from 'react';
 import Splash from "./components/Splash";
+import { motion } from "framer-motion";
+import { container, item} from "./components/animate";
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -28,11 +32,16 @@ export default function Home() {
       {loading ? (
         <Splash />
       ) : (
-        <main className='px-10 bg-white font-gloock dark:bg-black'>
-          <section className='min-h-screen'>
-            <nav className='py-4 mb-12 flex justify-between'>
+        <motion.main 
+          className=' min-h-screen p-10 font-gloock dark:bg-black'
+          initial={{ opacity:0 }}
+          animate={{ opacity: 1}}
+          transition={{ duration: 0.75, ease: "easeOut"}}
+          exit={{ opacity: 1 }}
+        >
+            <nav className='text-2xl  flex justify-between'>
               <Link href="/">
-                <h1 className=''>CP</h1>
+                <div className='text-2xl '>CP</div>
               </Link>
               <ul className='flex items-center px-10'>
                 <li className=' px-2 pr-10 '> 
@@ -56,24 +65,56 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className=' text-center p-10'>
-              <h2 className=' text-5xl py-2'>Chantae Palacio</h2>
-              <h3 className='text-2xl py-2'>Front End Developer</h3>
-              <p className='text-md py-2 leading-2'>🚧Page under Construction🚧</p>
+            {/* End of Nav */}
+
+            {/* main content */}
+            <div className=' overflow-hidden mt-64 p-1 text-center  lg:ml-20 lg:mr-64 lg:pr-96 lg:text-left '>
+              <div>
+              <motion.h1 
+                className=' text-6xl py-2'
+                animate={{ y:0 }}
+                initial={{ y: "100% "}}
+                transition={{ delay:0.5, duration:0.5 }}
+                >Welcome.
+              </motion.h1>
+              </div>
+      
+              <div className=' border-4 lg:border-l-teal-900 border-r-0 border-t-0 border-b-0 lg:pl-5 lg:-ml-3'>
+              <h2 className=' text-md py-2 leading-2'>
+                  My name is Chantae Palacio. I am a Front End Developer based in Los Angeles, CA. I began my coding journey in 2020.
+                  Although it was not "love at first sight" when learning about web development, I eventually grew into loving what I do.
+              </h2>
+              <h2 className='text-md py-2 leading-2'>
+                  I enjoy looking for new ways to express my creativity through building front end projects. For instance, to build my portfolio
+                  I used Next.js, TailwindCSS and Framer Motion.
+              </h2>
+              </div>
             </div>
-            <div className=' text-4xl flex justify-center gap-10 py-3'>
-              <a>
-                <BsLinkedin/>
-              </a>
-              <a>
-                <BsGithub />
-              </a>
-              <a>
-                <FaDev />
-              </a>
+            <div className='text-center underline text-2xl lg:px-36  lg:text-right lg:flex-col lg:justify-end lg:-mt-44'>
+                  <h3 className='text-3xl'>Socials</h3>
+                  <motion.ul 
+                  variants={container}
+                  initial='hidden'
+                  animate='show'>
+                    <div className='overflow-hidden'>
+                      <motion.li 
+                      variants={item}
+                      className='pb-2 decoration-emerald-100'>Github</motion.li>
+                    </div>
+                    <div className='overflow-hidden'>
+                      <motion.li 
+                      variants={item}
+                      className='pb-2 decoration-emerald-100'>LinkedIn</motion.li>
+                    </div>
+                    <div className='overflow-hidden'>
+                      <motion.li 
+                      variants={item}
+                      className='pb-2  decoration-emerald-100'>Dev.to</motion.li>
+                    </div>
+                  </motion.ul>
             </div>
-          </section>
-        </main>
+            {/* End of main content */}
+        </motion.main>
       )}
    </div>
   );
