@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Footer from "./Footer";
-import { useEffect, useState } from 'react';
 
 export default function Splash() {
 
