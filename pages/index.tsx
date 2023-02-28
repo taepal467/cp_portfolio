@@ -21,21 +21,19 @@ export default function Home() {
     }
 }
 
-const item = {
-  hidden:{ y: '100%'},
-  show: { y: '0%', transition: { duration:0.5 }},
-}
+  const item = {
+    hidden:{ y: '100%'},
+    show: { y: '0%', transition: { duration:0.5 }},
+  }
 
   const [darkMode, setDarkMode] = useState(false);
-  const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 3000)
+  // const [loading, setLoading] = useState(true);
 
-    return () => clearTimeout(timer)
-  }, [])
+  // useEffect(() => {
+  //     const timer = setTimeout(() => setLoading(false), 3000);
+  //     return () => clearTimeout(timer);
+  //   }, [])
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -45,7 +43,7 @@ const item = {
         <link rel='icon' href='/favicon.ico'/>
       </Head>
  
-      {loading && <Splash />}
+
 
         <motion.main 
           className=' min-h-screen p-10 font-gloock dark:bg-black'
