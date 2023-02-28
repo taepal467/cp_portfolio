@@ -5,11 +5,25 @@ import Link from 'next/link';
 import { useState , useEffect} from 'react';
 import Splash from "./components/Splash";
 import { motion } from "framer-motion";
-import { container, item} from "./animate";
-
 
 
 export default function Home() {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity:1,
+        transition: {
+            delayChildren: 0.5,
+            staggerChildren: 0.2,
+        },
+    }
+}
+
+const item = {
+  hidden:{ y: '100%'},
+  show: { y: '0%', transition: { duration:0.5 }},
+}
+
   const [darkMode, setDarkMode] = useState(false);
 
   const [loading, setLoading] = useState(true)
