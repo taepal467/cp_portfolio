@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import {BsFillMoonStarsFill, BsFillBrightnessHighFill, BsLinkedin, BsGithub} from 'react-icons/bs' ;
-import {FaDev} from 'react-icons/fa';
+import {BsFillMoonStarsFill, BsFillBrightnessHighFill} from 'react-icons/bs' ;
 import Link from 'next/link';
-import { useState , useEffect} from 'react';
-import Splash from "./components/Splash";
+import { useState } from 'react';
 import { motion } from "framer-motion";
 
 
@@ -28,13 +26,6 @@ export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //     const timer = setTimeout(() => setLoading(false), 3000);
-  //     return () => clearTimeout(timer);
-  //   }, [])
-
   return (
     <div className={darkMode ? 'dark' : ''}>
       <Head>
@@ -43,8 +34,6 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico'/>
       </Head>
  
-
-
         <motion.main 
           className=' min-h-screen p-10 font-gloock dark:bg-black'
           initial={{ opacity:0 }}
@@ -127,7 +116,6 @@ export default function Home() {
                   </motion.ul>
             </div>
         </motion.main>
-
    </div>
   );
 }

@@ -12,14 +12,14 @@ export default function App({ Component, pageProps, router }: AppProps) {
       const timer = setTimeout(() => setLoading(false), 3000);
       return () => clearTimeout(timer);
     }, []) 
+
   return (
     <>
-
-{loading ? <Splash /> : (
-      <AnimatePresence>
-        <Component key={router.pathname} {...pageProps} />
-      </AnimatePresence>
-)}
+      {loading ? <Splash /> : (
+          <AnimatePresence>
+            <Component key={router.pathname} {...pageProps} />
+          </AnimatePresence>
+      )}
     </>
   );
 
