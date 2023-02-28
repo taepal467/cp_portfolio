@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useState , useEffect} from 'react';
 import Splash from "./components/Splash";
 import { motion } from "framer-motion";
-import { container, item} from "./components/animate";
+import { container, item} from "./animate";
 
 
 
