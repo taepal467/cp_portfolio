@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: [' "Alumni Sans Pinstripe" ', 'sans-serif'],
+        sans: [ 'Alumni Sans Pinstripe' , 'sans-serif'],
+        monoton: [ 'Monoton', 'cursive' ],
       },
       
     },
