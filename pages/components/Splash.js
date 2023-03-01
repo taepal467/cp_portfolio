@@ -33,7 +33,7 @@ export default function Splash() {
         <div 
             id="fade-in"
             className={`transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <p className=' font-sans text-3xl  text-gray-600 font-extralight'>Chantae Palacio | <span className='font-bold'>Portfolio</span></p>
+          <p className=' font-monoton text-3xl  text-gray-600 font-extralight'>Chantae Palacio | <span className='font-bold'>Portfolio</span></p>
         </div>
       </div>
       <Footer />
