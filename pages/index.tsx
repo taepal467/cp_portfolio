@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
  
         <motion.main 
-          className=' bg-violet-200 min-h-screen p-10  dark:'
+          className=' bg-sky-100 text-gray-700 min-h-screen p-10  dark:bg-neutral-900'
           initial={{ opacity:0 }}
           animate={{ opacity: 1}}
           transition={{ duration: 0.75, ease: "easeOut"}}
@@ -70,18 +70,18 @@ export default function Home() {
             {/* End of Nav */}
 
             {/* content */}
-            <div className=' overflow-hidden mt-64 p-1 text-center  lg:ml-20 lg:mr-64 lg:pr-96 lg:text-left '>
-              <div>
+            <div className=' text-3xl mt-40 p-1 text-center  lg:ml-20 lg:mr-64 lg:pr-96 lg:text-left '>
+              <div className=''>
               <motion.h1 
-                className=' text-6xl py-2'
+                className=' text-8xl py-2 pb-20 font-monoton'
                 animate={{ y:0 }}
-                initial={{ y: "100% "}}
+                initial={{ y: "55% "}}
                 transition={{ delay:0.5, duration:0.5 }}
                 >Welcome.
               </motion.h1>
               </div>
       
-              <div className=' border-4 lg:border-l-teal-900 border-r-0 border-t-0 border-b-0 lg:pl-5 lg:-ml-3'>
+              <div className=' font-bold border-4 lg:border-l-teal-900 border-r-0 border-t-0 border-b-0 lg:pl-5 lg:-ml-3'>
               <h2 className=' text-md py-2 leading-2'>
                   My name is Chantae Palacio. I am a Front End Developer based in Los Angeles, CA. I began my coding journey in 2020.
                   Although it was not &quot;love at first sight&quot; when learning about web development, I eventually grew into loving what I do.
