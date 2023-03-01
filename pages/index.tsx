@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
  
         <motion.main 
-          className=' min-h-screen p-10 font-gloock dark:bg-black'
+          className=' bg-violet-200 min-h-screen p-10  dark:'
           initial={{ opacity:0 }}
           animate={{ opacity: 1}}
           transition={{ duration: 0.75, ease: "easeOut"}}
