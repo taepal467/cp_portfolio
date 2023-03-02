@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import Splash from "./components/Splash";
 import {BsFillMoonStarsFill, BsFillBrightnessHighFill} from 'react-icons/bs' ;
 import Link from 'next/link';
+import Cursor from "./components/Cursor";
 
 
 export default function App({ Component, pageProps, router }: AppProps) {
@@ -18,29 +19,28 @@ export default function App({ Component, pageProps, router }: AppProps) {
       return () => clearTimeout(timer);
     }, []) 
 
+  
   return (
     <>
       {loading ? <Splash /> : (
           <AnimatePresence>
             <div className={darkMode ? 'dark' : ''}>
-              <nav className='text-2xl  flex justify-between -mt-10'>
+              <nav className='text-gray-700 text-lg px-10 flex justify-between z-20 relative dark:text-slate-500'>
               <Link href="/">
-                <div className='text-2xl '>CP</div>
+                <div className='text-2xl font-monoton p-2'>CP</div>
               </Link>
-              <ul className='flex items-center px-10'>
+              <ul className='font-sans flex items-center px-10'>
                 <li className=' px-2 pr-10 '> 
                   {darkMode ? <BsFillBrightnessHighFill 
-                    className='cursor-pointer'
                     onClick={() => setDarkMode(!darkMode)}/> : 
                     <BsFillMoonStarsFill 
-                    className='cursor-pointer'
                     onClick={() => setDarkMode(darkMode => !darkMode)}
                   />}
                 </li>
-                <li className=' px-2'>
+                <li className='hover:underline hover:text-2xl px-2'>
                   <Link href='./components/Projects'>Projects</Link>
                   </li>
-                <li className=' px-2'>
+                <li className='hover:underline hover:text-2xl  px-2'>
                   <a href="https://docs.google.com/document/d/1gd_s5Lm468wk0DONMSpgxVsJarLlb9Cx51AHrZmtRnQ/edit?usp=sharing" 
                     target='_blank'
                     rel="noopener noreferrer">
@@ -50,6 +50,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
               </ul>
             </nav>  
             <Component key={router.pathname} {...pageProps} />
+            <Cursor />
             </div>
           </AnimatePresence>
       )}
