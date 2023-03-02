@@ -8,6 +8,7 @@
 
 * {
     box-sizing: border-box;
+    cursor: none;
 }
 
 html,
@@ -26,6 +27,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 }
+
 
 
 
