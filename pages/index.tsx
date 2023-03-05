@@ -29,7 +29,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico'/>
       </Head>
         <motion.main 
-          className='bg-slate-100  text-gray-700 absolute top-0 left-0 min-h-screen p-5 font-sans dark:bg-slate-900 dark:text-slate-500'
+          className='bg-slate-200  text-gray-700 absolute top-0 left-0 min-h-screen p-5 font-sans dark:bg-slate-900 dark:text-slate-500'
           initial={{ opacity:0 }}
           animate={{ opacity: 1}}
           transition={{ duration: 0.75, ease: "easeOut"}}
