@@ -27,7 +27,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
             <div className={darkMode ? 'dark' : ''}>
               <nav className='text-gray-700 text-lg px-10 flex justify-between z-20 relative dark:text-slate-500'>
               <Link href="/">
-                <div className='text-2xl font-monoton p-2'>CP</div>
+                <div className='text-2xl font-poiret p-2'>CP</div>
               </Link>
               <ul className='font-sans flex items-center px-10'>
                 <li className=' px-2 pr-10 '> 

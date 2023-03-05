@@ -40,7 +40,7 @@ export default function Home() {
             <div className=' text-3xl mt-40 p-1 text-center  lg:ml-20 lg:mr-64 lg:pr-96 lg:text-left '>
               <div className=''>
               <motion.h1 
-                className=' text-7xl  pb-10 font-monoton'
+                className=' text-7xl  pb-10 font-poiret'
                 animate={{ y: 30 }}
                 transition={{ ease: "easeOut", duration: 2 }}>
                 Welcome.

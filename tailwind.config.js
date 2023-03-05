@@ -10,8 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [ 'Montserrat' , 'sans-serif'],
-        monoton: [ 'Monoton', 'cursive' ],
-      
+        poiret: [ 'Poiret One', 'cursive' ],   
       },
       
     },
