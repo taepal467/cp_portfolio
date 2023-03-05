@@ -25,7 +25,7 @@ export default function Splash() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-neutral-300">
+    <div className="flex flex-col items-center justify-center h-screen bg-neutral-900">
       <Head>
         <title>CP</title>
       </Head>
@@ -33,7 +33,7 @@ export default function Splash() {
         <div 
             id="fade-in"
             className={`transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <p className=' font-poiret text-3xl  text-gray-600 '>Chantae Palacio | <span className='font-extrabold'>Portfolio</span></p>
+          <p className=' font-poiret text-3xl  text-neutral-600 '>Chantae Palacio | <span className='font-extrabold'>Portfolio</span></p>
         </div>
       </div>
       <Footer />

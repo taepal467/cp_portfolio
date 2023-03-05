@@ -29,7 +29,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico'/>
       </Head>
         <motion.main 
-          className='bg-slate-200  text-gray-700 absolute top-0 left-0 min-h-screen p-5 font-sans dark:bg-slate-900 dark:text-slate-500'
+          className='bg-orange-100  text-gray-700 absolute top-0 left-0 min-h-screen p-5 font-sans dark:bg-neutral-900 dark:text-neutral-500'
           initial={{ opacity:0 }}
           animate={{ opacity: 1}}
           transition={{ duration: 0.75, ease: "easeOut"}}
@@ -40,14 +40,14 @@ export default function Home() {
             <div className=' text-3xl mt-40 p-1 text-center  lg:ml-20 lg:mr-64 lg:pr-96 lg:text-left '>
               <div className=''>
               <motion.h1 
-                className=' text-7xl  pb-10 font-poiret'
+                className=' text-8xl  pb-10 font-poiret'
                 animate={{ y: 30 }}
                 transition={{ ease: "easeOut", duration: 2 }}>
                 Welcome.
               </motion.h1>
               </div>
       
-              <div className=' text-base lg:border-4 lg:border-l-gray-700 lg:border-r-0 lg:border-t-0 lg:border-b-0 lg:pl-5 lg:-ml-3'>
+              <div className=' text-base lg:border-4 lg:border-l-gray-700 lg:border-r-0 lg:border-t-0 lg:border-b-0 lg:pl-5 lg:-ml-3 dark:lg:border-l-neutral-500'>
               <h2 className=' text-md py-2 leading-2'>
                   My name is Chantae Palacio. I am a self-taught Front End Developer based in Los Angeles, CA. I began my coding journey in 2020.
                   Although it was not &quot;love at first sight&quot; when learning about web development, I eventually grew into loving what I do.When 
@@ -74,8 +74,8 @@ export default function Home() {
                   </motion.ul>
               </div>
             </div>
-            <div className='text-gray-700 min-[320px]:pt-10 lg:absolute lg:inset-x-120 lg:right-0 text-center underline text-md lg:px-36  lg:text-right lg:flex-col lg:justify-end lg:-mt-32 dark:text-slate-500'>
-                  <h3 className='text-3xl font-monoton'>Socials</h3>
+            <div className='text-gray-700 min-[320px]:pt-10 lg:absolute lg:inset-x-120 lg:right-0 text-center underline text-md lg:px-36  lg:text-right lg:flex-col lg:justify-end lg:-mt-32 dark:text-neutral-500'>
+                  <h3 className='text-3xl font-poiret'>Socials</h3>
                   <motion.ul 
                   variants={container}
                   initial='hidden'
