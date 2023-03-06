@@ -47,7 +47,7 @@ export default function Home() {
               </motion.h1>
               </div>
       
-              <div className=' text-base lg:border-4 lg:border-l-black lg:border-r-0 lg:border-t-0 lg:border-b-0 lg:pl-5 lg:-ml-3 dark:lg:border-l-neutral-500'>
+              <div className=' text-base lg:border-4 lg:border-l-black lg:border-r-0 lg:border-t-0 lg:border-b-0 lg:pl-5 lg:-ml-3 dark:lg:border-l-champagne'>
               <h2 className=' text-md py-2 leading-2'>
                   My name is Chantae Palacio. I am a self-taught Front End Developer based in Los Angeles, CA. I began my coding journey in 2020.
                   Although it was not &quot;love at first sight&quot; when learning about web development, I eventually grew into loving what I do.When 
@@ -83,17 +83,17 @@ export default function Home() {
                     <div>
                       <motion.li 
                       variants={item}
-                      className=' pb-2 hover:text-2xl hover:ease-out hover:duration-300'>Github</motion.li>
+                      className=' pb-2 font-gloock hover:text-2xl hover:ease-out hover:duration-300'>Github</motion.li>
                     </div>
                     <div>
                       <motion.li 
                       variants={item}
-                      className=' pb-2  hover:text-2xl hover:ease-out hover:duration-300'>LinkedIn</motion.li>
+                      className=' pb-2  font-gloock hover:text-2xl hover:ease-out hover:duration-300'>LinkedIn</motion.li>
                     </div>
                     <div>
                       <motion.li 
                       variants={item}
-                      className=' pb-2  hover:text-2xl hover:ease-out hover:duration-300'>Dev.to</motion.li>
+                      className=' pb-2 font-gloock hover:text-2xl hover:ease-out hover:duration-300'>Dev.to</motion.li>
                     </div>
                   </motion.ul>
             </div>
