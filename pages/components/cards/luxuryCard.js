@@ -14,7 +14,6 @@ export default function luxuryCard() {
             Tae&#x27;s Discount Luxury Store is a project I built for the &#x27;Shopping Cart&#x27; assignment in The Odin Project. I tried replicating real shopping sites
             when building this project. You simply add the items you want to the shopping bag. You then have the option of increasing or decreasing
             the quantity of items. After submitting your order by clicking the &#x27;Checkout&#x27; button, you will then see a fictitious &#x27;Order confirmation&#x27; page.
-      
             I used <span className="font-extrabold">React</span>, <span className="font-extrabold">CSS</span>, and
             <span className="font-extrabold pl-1">ChatGPT</span>.
             </p>
