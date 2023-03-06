@@ -8,7 +8,7 @@ export default function libraryCard() {
           transition={{ duration: 0.75, ease: "easeOut"}}
           exit={{ opacity: 1 }}
         >
-            <h1 className="text-3xl pb-2 font-gloock">Library</h1>
+            <h1 className="text-3xl pb-6 font-gloock">Library</h1>
             <div className="lg:pl-5 lg:-ml-3 lg:border-4 lg:border-l-black lg:border-r-0 lg:border-t-0 lg:border-b-0 lg:dark:border-l-champagne">
                 <p className="font-sans leading-2 ">
                 Library is a project I built as an assignment in The Odin Project. The Library is an app that you can use to
