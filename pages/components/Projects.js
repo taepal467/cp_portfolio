@@ -21,13 +21,13 @@ export default function Projects() {
     return(
         <div >
            <motion.main 
-            className='bg-orange-100 text-gray-700 absolute top-0 left-0 w-full h-full p-5 font-sans dark:bg-neutral-900 dark:text-neutral-500'
+            className='bg-pinkNude text-black absolute top-0 left-0 w-full h-full p-5 font-sans dark:bg-neutral-900 dark:text-champagne'
             initial={{ opacity:0 }}
             animate={{ opacity: 1}}
             transition={{ duration: 0.75, ease: "easeOut"}}
             >
             <motion.h1 
-            className=' text-7xl  pb-10 font-poiret'
+            className=' text-7xl  pb-10 font-gloock'
             animate={{ y: 30 }}
             transition={{ ease: "easeOut", duration: 2 }}>
             Projects
