@@ -15,8 +15,8 @@ export default function luxuryCard() {
             when building this project. You simply add the items you want to the shopping bag. You then have the option of increasing or decreasing
             the quantity of items. After submitting your order by clicking the &#x27;Checkout&#x27; button, you will then see a fictitious &#x27;Order confirmation&#x27; page.
       
-            I used <span className="font-extrabold">React</span>, <span className="font-extrabold">ChatGPT</span>, and
-            <span className="font-extrabold pl-1">CSS</span>.
+            I used <span className="font-extrabold">React</span>, <span className="font-extrabold">CSS</span>, and
+            <span className="font-extrabold pl-1">ChatGPT</span>.
             </p>
             <div className="pt-4">
                 <a 
