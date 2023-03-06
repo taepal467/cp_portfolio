@@ -38,7 +38,7 @@ export default function Home() {
             
             {/* content */}
             <div className=' text-3xl mt-40 p-1 text-center  lg:ml-20 lg:mr-64 lg:pr-96 lg:text-left '>
-              <div className=''>
+              <div>
               <motion.h1 
                 className=' text-8xl  pb-10 font-gloock'
                 animate={{ y: 30 }}
