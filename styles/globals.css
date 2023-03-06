@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -28,6 +29,10 @@ body {
     src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 }
 
+@font-face {
+    font-family: 'Gloock', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+}
 
 
 
