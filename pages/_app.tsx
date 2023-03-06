@@ -25,11 +25,11 @@ export default function App({ Component, pageProps, router }: AppProps) {
       {loading ? <Splash /> : (
           <AnimatePresence>
             <div className={darkMode ? 'dark' : ''}>
-              <nav className='text-gray-700 text-lg px-10 flex justify-between z-20 relative dark:text-neutral-500 '>
+              <nav className='text-black text-lg px-10 flex justify-between z-20 relative dark:text-champagne '>
               <Link href="/">
-                <div className='text-3xl font-poiret p-2 font-extrabold'>CP</div>
+                <div className='text-3xl font-gloock p-2 underline underline-offset-4'>CP</div>
               </Link>
-              <ul className='font-sans flex items-center px-10'>
+              <ul className='font-gloock flex items-center px-10'>
                 <li className=' px-2 pr-10 '> 
                   {darkMode ? <BsFillBrightnessHighFill 
                     onClick={() => setDarkMode(!darkMode)}/> : 
