@@ -17,6 +17,23 @@ export default function Projects() {
         setSelectedComponent(componentName)
     }
 
+      //these two const variables are used for the animated links
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity:1,
+        transition: {
+            delayChildren: 0.5,
+            staggerChildren: 0.2,
+        },
+    }
+}
+
+  const item = {
+    hidden:{ x: '100%'},
+    show: { x: '0%', transition: {  duration:0.75 }},
+  }
+
 
     return(
         <div >
@@ -26,39 +43,66 @@ export default function Projects() {
             animate={{ opacity: 1}}
             transition={{ duration: 0.75, ease: "easeOut"}}
             >
-            <motion.h1 
-            className=' text-7xl  pb-10 font-gloock'
-            animate={{ y: 30 }}
-            transition={{ ease: "easeOut", duration: 2 }}>
-            Projects
-            </motion.h1>
-            <div className='mt-20'> 
-                <ul>
-                    <li>
-                    <Link href="#" onClick={() => handleLinkClick('libraryCard')}>Library</Link>
-                    </li>
-                    <li>
-                    <Link href="#" onClick={() => handleLinkClick('weatherCard')}>Weather App</Link>
-                    </li>
-                    <li>
-                    <Link href="#" onClick={() => handleLinkClick('boutiqueCard')}>Tae Ice cream boutique</Link>
-                    </li>
-                    <li>
-                    <Link href="#" onClick={() => handleLinkClick('cvCard')}>CV Builder</Link>
-                    </li>
-                    <li>
-                    <Link href="#" onClick={() => handleLinkClick('luxuryCard')}>Tae luxury discount store</Link>
-                    </li>
-                </ul>
-                <div className='lg:absolute lg:inset-x-120 lg:right-0'>
+    
+            <div className='text-base mt-20 lg:absolute lg:inset-x-3/4 lg:right-0 lg:top-20'> 
+                <div>
+                <motion.h1 
+                className=' text-7xl  pb-10 font-gloock'
+                animate={{ y: 30 }}
+                transition={{ ease: "easeOut", duration: 2 }}>
+                Projects
+                </motion.h1>
+                </div>
+                <motion.ul 
+                className='font-gloock underline underline-offset-4 py-6'
+                variants={container}
+                initial='hidden'
+                animate='show'
+                >
+                    <div>
+                        <motion.li 
+                        className="pb-2 hover:text-2xl hover:ease-out hover:duration-300" 
+                        variants={item}>
+                            <Link href="#" onClick={() => handleLinkClick('libraryCard')}>Library</Link>
+                        </motion.li>
+                    </div>
+                    <div>
+                        <motion.li
+                         className="pb-2 hover:text-2xl hover:ease-out hover:duration-300"    
+                        variants={item}>
+                            <Link href="#" onClick={() => handleLinkClick('weatherCard')}>Weather App</Link>
+                        </motion.li>
+                    </div>
+                    <div>
+                        <motion.li 
+                         className="pb-2 hover:text-2xl hover:ease-out hover:duration-300"   
+                        variants={item}>
+                            <Link href="#" onClick={() => handleLinkClick('boutiqueCard')}>Tae Ice cream boutique</Link>
+                        </motion.li>
+                    </div>
+                    <div>
+                        <motion.li
+                         className="pb-2 hover:text-2xl hover:ease-out hover:duration-300"    
+                        variants={item}>
+                            <Link href="#" onClick={() => handleLinkClick('cvCard')}>CV Builder</Link>
+                        </motion.li>
+                    </div>
+                    <div>
+                        <motion.li
+                         className="pb-2 hover:text-2xl hover:ease-out hover:duration-300"    
+                        variants={item}>
+                            <Link href="#" onClick={() => handleLinkClick('luxuryCard')}>Tae luxury discount store</Link>
+                        </motion.li>
+                    </div>
+                </motion.ul>
+            </div>
+            <div className='lg:ml-40 lg:mt-32 lg:absolute  lg:inset-x-2/4 lg:left-0 lg:top-20'>
                 {selectedComponent === 'libraryCard' && <DynamicComponent1 />}
                 {selectedComponent === 'weatherCard' && <DynamicComponent2 />}
                 {selectedComponent === 'boutiqueCard' && <DynamicComponent3 />}
                 {selectedComponent === 'cvCard' && <DynamicComponent4 />}
                 {selectedComponent === 'luxuryCard' && <DynamicComponent5 />}
                 </div>
-                
-            </div>
                     
             </motion.main>
         </div>
