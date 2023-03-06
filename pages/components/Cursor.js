@@ -32,7 +32,7 @@ export default function Cursor() {
 
     return (
         <motion.div 
-        className='cursor bg-gray-700 h-5 w-5 rounded-full fixed top-0 left-0 opacity-75 dark:bg-neutral-500'
+        className='cursor bg-black h-5 w-5 rounded-full fixed top-0 left-0 opacity-60 dark:bg-champagne'
         variants={variants}
         animate='default'></motion.div>
     );
