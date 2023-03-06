@@ -10,8 +10,13 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [ 'Montserrat' , 'sans-serif'],
-        poiret: [ 'Poiret One', 'cursive' ],   
+        poiret: [ 'Poiret One', 'cursive' ], 
+        gloock: ['Gloock', 'serif']  
       },
+      colors : {
+        pinkNude: '#ddc0b4',
+        champagne: '#FBEDE0'
+      }
       
     },
   },
