@@ -38,7 +38,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
                   />}
                 </li>
                 <li className='hover:underline hover:text-2xl px-2'>
-                  <Link href='./components/Projects'>Projects</Link>
+                  <Link href='/components/Projects'>Projects</Link>
                   </li>
                 <li className='hover:underline hover:text-2xl  px-2 '>
                   <a href="https://docs.google.com/document/d/1gd_s5Lm468wk0DONMSpgxVsJarLlb9Cx51AHrZmtRnQ/edit?usp=sharing" 
