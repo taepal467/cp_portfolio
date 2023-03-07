@@ -17,8 +17,8 @@ export default function Home() {
 }
 
   const item = {
-    hidden:{ y: '100%'},
-    show: { y: '0%', transition: { duration:0.5 }},
+    hidden:{ y: '75%'},
+    show: { y: '0%', transition: { duration:0.75 }},
   }
 
   return (
