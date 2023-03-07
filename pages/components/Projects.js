@@ -30,8 +30,8 @@ export default function Projects() {
 }
 
   const item = {
-    hidden:{ x: '100%'},
-    show: { x: '0%', transition: {  duration:0.75 }},
+    hidden:{ y: '75%'},
+    show: { y: '0%', transition: {  duration:0.75 }},
   }
 
 
