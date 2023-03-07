@@ -26,29 +26,29 @@ export default function App({ Component, pageProps, router }: AppProps) {
           <AnimatePresence>
             <div className={darkMode ? 'dark' : ''}>
               <nav className='text-black text-lg px-10 flex justify-between z-20 relative dark:text-champagne '>
-              <Link href="/">
-                <div className='text-3xl font-gloock p-2 underline underline-offset-4'>CP</div>
-              </Link>
-              <ul className='font-gloock flex items-center px-10'>
-                <li className=' px-2 pr-10 '> 
-                  {darkMode ? <BsFillBrightnessHighFill 
-                    onClick={() => setDarkMode(!darkMode)}/> : 
-                    <BsFillMoonStarsFill 
-                    onClick={() => setDarkMode(darkMode => !darkMode)}
-                  />}
-                </li>
-                <li className='hover:underline hover:text-2xl px-2'>
-                  <Link href='/components/Projects'>Projects</Link>
+                <Link href="/">
+                  <div className='text-3xl font-gloock p-2 underline underline-offset-4'>CP</div>
+                </Link>
+                <ul className='font-gloock flex items-center px-10'>
+                  <li className=' px-2 pr-10 '> 
+                    {darkMode ? <BsFillBrightnessHighFill 
+                      onClick={() => setDarkMode(!darkMode)}/> : 
+                      <BsFillMoonStarsFill 
+                      onClick={() => setDarkMode(darkMode => !darkMode)}
+                     />}
                   </li>
-                <li className='hover:underline hover:text-2xl  px-2 '>
-                  <a href="https://docs.google.com/document/d/1gd_s5Lm468wk0DONMSpgxVsJarLlb9Cx51AHrZmtRnQ/edit?usp=sharing" 
-                    target='_blank'
-                    rel="noopener noreferrer">
-                    Resume
-                  </a>
-                </li>
-              </ul>
-            </nav>  
+                  <li className='hover:underline hover:text-2xl px-2'>
+                    <Link href='/components/Projects'>Projects</Link>
+                  </li>
+                  <li className='hover:underline hover:text-2xl  px-2 '>
+                    <a href="https://docs.google.com/document/d/1gd_s5Lm468wk0DONMSpgxVsJarLlb9Cx51AHrZmtRnQ/edit?usp=sharing" 
+                      target='_blank'
+                      rel="noopener noreferrer">
+                      Resume
+                    </a>
+                  </li>
+                </ul>
+              </nav>  
             <Component key={router.pathname} {...pageProps} />
             <Cursor />
             </div>
