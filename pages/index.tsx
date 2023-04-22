@@ -76,19 +76,22 @@ export default function Home() {
                   initial='hidden'
                   animate='show'>
                     <div>
-                      <motion.li 
+                      <motion.a
                       variants={item}
-                      className=' pb-2 font-gloock hover:text-2xl hover:ease-out hover:duration-300'>Github</motion.li>
+                      href="https://github.com/taepal467" target="_blank" rel="noreferrer"
+                      className=' pb-2 font-gloock hover:text-2xl hover:ease-out hover:duration-300'>Github</motion.a>
                     </div>
                     <div>
-                      <motion.li 
+                      <motion.a
                       variants={item}
-                      className=' pb-2  font-gloock hover:text-2xl hover:ease-out hover:duration-300'>LinkedIn</motion.li>
+                      href="https://www.linkedin.com/in/chantae-palacio/" target="_blank" rel="noreferrer"
+                      className=' pb-2  font-gloock hover:text-2xl hover:ease-out hover:duration-300'>LinkedIn</motion.a>
                     </div>
                     <div>
-                      <motion.li 
+                      <motion.a
                       variants={item}
-                      className=' pb-2 font-gloock hover:text-2xl hover:ease-out hover:duration-300'>Dev.to</motion.li>
+                      href="https://dev.to/taepal467" target="_blank" rel="noreferrer"
+                      className=' pb-2 font-gloock hover:text-2xl hover:ease-out hover:duration-300'>Dev.to</motion.a>
                     </div>
                   </motion.ul>
             </div>
